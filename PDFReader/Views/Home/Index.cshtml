@@ -1,1 +1,13 @@
-﻿<h1>Hello world</h1>
+﻿@model PDFReader.Models.PDF
+
+@{
+    ViewData["Title"] = "PDF Content";
+}
+
+<h1>PDF Content</h1>
+
+<h2>Words:</h2>
+@foreach (var word in Model.Words)
+{
+    <p>@word</p>
+}
